@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Landing page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,500i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    
+        
+
+
+    <!-- Header -->
+    <section class="masthead">
+        <div class="container">
+            <div class="row pb-3">
+                <div class="col-md-4">
+                    <img class="logo" src="img/opteck-logo.png" alt="Opteck">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <h1 class="pt-4 pb-4">Learn how to <br class="hiddern-md-down">make money online</h1>
+                    <!-- <a href="#services" class="btn btn-xl">Tell Me More</a> -->
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="story">
+                                <p class="story__message">
+                                    I tried many online brokers, but the experience I had with Opteck was the best one. Their accounr managers and friendly platform helped me improve my trading skills. I was finally able to make adiitional income,
+                                    especially from the 60 sec. option feature. <br>
+                                    <strong>You simply can't believe how good of a feeling it is</strong><br>
+                                    <strong>David Shvimmer</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <img class="man" src="img/man.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-xs-12 col-md-4">
+                    <div class="form--dream">
+                        <div class="form--dream__header">
+                            <span>If David did it, <strong>so can you!</strong></span>     
+                        </div>
+                
+                        <div class="form--dream__body">
+                            <h3>
+                               Open account
+                            </h3>
+                            <form action="https://app.getresponse.com/add_contact_webform_v2.html?u=BHndX&webforms_id=3125506" method="post" class="form-horizontal">
+                                <div class="form-group  input-with-icon">
+                                    <div class="col-xs-12">
+                                        <input type="text" class="form-control first-name" placeholder="Full name" name="webform[name]" required/>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group--lg input-with-icon">
+                                    <div class="col-xs-12">
+                                        <input type="email" class="form-control email" placeholder="E-mail" name="webform[email]" required/>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group--lg input-with-icon">
+                                    <div class="col-xs-12">
+                                        <input type="email" class="form-control email" placeholder="E-mail" name="webform[email]" required/>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group--lg input-with-icon">
+                                    <div class="col-xs-12">
+                                        <input type="email" class="form-control email" placeholder="E-mail" name="webform[email]" required/>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="webform[tracking]" value="<?=$tracking_id?>">
+                                <input type="hidden" name="webform[s_id]" value="<?=$site['id']?>">
+                                <input type="hidden" name="webform[v_inn]" value="<?=$v_inn?>">
+                                <input type="hidden" name="webform[redirect_url]" id="redirect_url" value="/members.php">
+                                <input type="hidden" name="webform[traff]" id="custom_traff" value="<?=isset_or($user['traff'], '')?>">
+                                <input type="hidden" name="webform[campid]" value="<?=isset_or($user['campid'], '285')?>">
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <button class="btn  btn-block btn-lg btn-primary btn3d" type="submit" >
+                                            Register here
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    
+                        <div class="form--dream__footer">
+                            <div class="top">
+                                <div class="check">
+                                    <img class="img-fluid" src="img/18.png" />
+                                    <input type="checkbox" name="checkme" id="agree"/>
+                                </div>
+                                <div class="agree">
+                                    <p> I agree ro receive information via email from opteck.com</p>
+                                    <a href="#modal">Privacy Policy</a>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <img class="img-fluid" src="img/secure-icons.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Services</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Responsive Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>

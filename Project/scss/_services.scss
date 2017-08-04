@@ -1,0 +1,18 @@
+// Styling for the services section
+#services {
+  position: relative;
+  padding-top: 73px;
+  padding-bottom: 30px;
+	background-image: url(../img/bg-bottom.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
