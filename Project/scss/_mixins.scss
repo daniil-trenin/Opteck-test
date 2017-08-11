@@ -76,6 +76,13 @@
     font-weight: 300;
     text-transform: uppercase;
 }
+
+@mixin btn-font {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
 @mixin triangle($size, $color, $direction) {
   $width: nth($size, 1);
   $height: nth($size, length($size));
@@ -139,3 +146,5 @@
     border-width: $width $height;
   }
 }
+
+

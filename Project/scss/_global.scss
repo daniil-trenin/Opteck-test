@@ -67,3 +67,23 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: $theme-primary;
 }
+
+.fw-thin {
+    font-weight: 100;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.l-h {
+    line-height: 1.25;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}

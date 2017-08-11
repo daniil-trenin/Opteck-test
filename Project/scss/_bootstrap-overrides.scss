@@ -3,11 +3,17 @@
 }
 
 .btn-primary {
-    font-weight: 700;
-    @include button-variant(white, $theme-primary, $theme-primary);
-    @include heading-font;
+    background: linear-gradient(to top, #f0412f, #f15242, #f36859);
+    border: none;
+    border-top: 1px solid #f89d89;
+    border-radius: 22px;
+    padding: 7px 0;
+    cursor: pointer;
+    @include btn-font;
 }
-
+.form-btn {
+    
+}
 .btn-xl {
     font-size: 18px;
     font-weight: 700;

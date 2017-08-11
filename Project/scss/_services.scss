@@ -11,6 +11,16 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    
+    .custom-container {
+      padding: 45px 35px;
+    }
+
+    .row-bottom {
+      background: #fafafa;
+      border-top: 1px solid #ececec;
+      padding: 23px 0 25px 0;
+    }
 }
 .service-heading {
     margin: 15px 0;
