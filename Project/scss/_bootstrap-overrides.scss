@@ -8,6 +8,7 @@
     border-top: 1px solid #f89d89;
     border-radius: 22px;
     padding: 7px 0;
+    font-size: 24px;
     cursor: pointer;
     @include btn-font;
 }
@@ -21,4 +22,11 @@
     border-radius: 3px;
     @include button-variant(white, $theme-primary, $theme-primary);
     @include heading-font;
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 1032px !important;
+        max-width: 100% !important;
+    }
 }

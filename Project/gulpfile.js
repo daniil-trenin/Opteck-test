@@ -18,7 +18,7 @@ var banner = ['/*!\n',
 
 // Compiles SCSS files from /scss into /css
 gulp.task('sass', function() {
-    return gulp.src('scss/agency.scss')
+    return gulp.src('scss/style.scss')
         .pipe(sass())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))
@@ -29,7 +29,7 @@ gulp.task('sass', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function() {
-    return gulp.src('css/agency.css')
+    return gulp.src('css/style.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
@@ -40,7 +40,7 @@ gulp.task('minify-css', ['sass'], function() {
 
 // Minify custom JS
 gulp.task('minify-js', function() {
-    return gulp.src('js/agency.js')
+    return gulp.src('js/app.js')
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
@@ -50,20 +50,20 @@ gulp.task('minify-js', function() {
         }))
 });
 
-// Copy vendor files from /node_modules into /vendor
+// Copy components files from /node_modules into /components
 // NOTE: requires `npm install` before running!
 gulp.task('copy', function() {
     gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
-        .pipe(gulp.dest('vendor/bootstrap'))
+        .pipe(gulp.dest('components/bootstrap'))
 
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-        .pipe(gulp.dest('vendor/jquery'))
+        .pipe(gulp.dest('components/jquery'))
 
     gulp.src(['node_modules/tether/dist/js/*.js'])
-        .pipe(gulp.dest('vendor/tether'))
+        .pipe(gulp.dest('components/tether'))
 
     gulp.src(['node_modules/jquery.easing/*.js'])
-        .pipe(gulp.dest('vendor/jquery-easing'))
+        .pipe(gulp.dest('components/jquery-easing'))
 
     gulp.src([
             'node_modules/font-awesome/**',
@@ -73,7 +73,7 @@ gulp.task('copy', function() {
             '!node_modules/font-awesome/*.md',
             '!node_modules/font-awesome/*.json'
         ])
-        .pipe(gulp.dest('vendor/font-awesome'))
+        .pipe(gulp.dest('components/font-awesome'))
 })
 
 // Default task

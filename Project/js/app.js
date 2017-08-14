@@ -14,11 +14,18 @@
             }
         }
     });
+    
+    $(document).ready(function(){
+        tabModule.init();
+    });
+    
+    $('.scroll-to-form').click(function(e) {
+        e.preventDefault();
+        $.scrollTo('.form--dream',700);;
+    });
 
 
 })(jQuery); // End of use strict
 
-$(document).ready(function(){
-  tabModule.init();
-});
+
 

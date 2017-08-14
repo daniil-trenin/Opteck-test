@@ -3,6 +3,7 @@
     color: white;
     position: relative;
     padding-top: 15px;
+    padding-bottom: 6px;
     background-image: url('../img/header-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -40,11 +41,11 @@
     // }
 
     .story {
-        padding: 22px 30px 72px 29px;
+        padding: 22px 30px 45px 29px;
         background-color: rgba(30, 15, 44, .7);
         border-radius: 10px;
         p {
-            font-size: 1.125em;
+            font-size: 1.025em;
             text-align: left;
             font-weight: 300;
             line-height: 1.4;
@@ -55,9 +56,9 @@
     }
 
     .man {
-        position: relative;
-        top: 33px;
-        left: -250px;
+        position: absolute;
+        top: 185px;
+        left: 58px;
         z-index: 10;
     }
 }

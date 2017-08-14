@@ -10,7 +10,7 @@
             border-right: 1px solid #f0f0f0;
             border-top-left-radius: 4px;
             border-bottom-left-radius: 4px;
-            font-size: 18px;
+            font-size: 16px;
             text-transform: none;
             text-align: left;
             color: #282828;
@@ -19,6 +19,7 @@
         .active {
             border-left: 13px solid #7fc5d0 !important;
             background-color: #FFF;
+            padding: 13px 11px 15px 9px;
             color: #3f808a;
         }
         @media all and (max-width: 764px){width: 100%};
