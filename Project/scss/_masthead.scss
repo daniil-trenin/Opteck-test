@@ -56,10 +56,40 @@
     }
 
     .man {
-        position: absolute;
-        top: 185px;
-        left: 58px;
+        position: relative;
+        top: 60px;
+        left: -370px;
         z-index: 10;
+    }
+}
+
+@media(max-width: 480px){
+    .masthead {
+        background-position: top;
+        background-size: auto 704px; 
+        h1 {
+            font-size: 40px;
+        }
+        .man {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin-top: -103px;
+        }
+    }
+}
+
+@media(min-width:481px) and (max-width: 991px){
+    .masthead {
+        .man {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: auto;
+            width: 80%;
+            margin-top: 40px;
+        }
     }
 }
 

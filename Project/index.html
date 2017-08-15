@@ -38,7 +38,7 @@
                 <div class="col-12 col-lg-7">
                     <h1 class="pt-4 pb-4">Learn how to <br class="hiddern-md-down">make money online</h1>
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-10 col-md-8">
                             <div class="story">
                                 <p class="story__message">
                                     I tried many online brokers, but the experience I had with Opteck was the best one. Their accounr managers and friendly platform helped me improve my trading skills. I was finally able to make adiitional income,
@@ -48,18 +48,20 @@
                                 </p>
                             </div>
                         </div>
-                        <img class="man" src="img/man.png" alt="">
+                        <div class="col-11 col-lg-4">
+                            <img class="man" src="img/man.png" alt="">
+                        </div>
                     </div>
                     
                 </div>
 
-                <div class="col-11 col-lg-5 px-4">
-                    <div class="form--dream">
-                        <div class="form--dream__header">
+                <div class="col-sm-8 col-lg-5 col-11 px-4 mx-auto">
+                    <div class="main-form">
+                        <div class="main-form__header">
                             <span>If David did it, <strong>so can you!</strong></span>     
                         </div>
                 
-                        <div class="form--dream__body">
+                        <div class="main-form__body">
                             <h3>
                                Open account
                             </h3>
@@ -69,30 +71,33 @@
                                         <input type="text" class="form-control first-name" placeholder="Full name" name="webform[name]" required/>
                                     </div>
                                 </div>
-                                <div class="form-group form-group--lg input-with-icon">
+                                <div class="form-group form-group--lg">
                                     <div class="col-xs-12">
                                         <input type="email" class="form-control email" placeholder="E-mail" name="webform[email]" required/>
                                     </div>
                                 </div>
-                                <div class="form-group form-group--lg input-with-icon">
-                                    <div class="col-xs-12">
-                                        <input type="email" class="form-control email" placeholder="E-mail" name="webform[email]" required/>
+                                <div class="form-group form-group--lg">
+                                    <div class="phone-1">
+                                        <input type="phone" class="form-control form-control-phone1" placeholder="+345" name="webform[email]" required/>
+                                    </div>
+                                    <div class="phone-2">
+                                        <input type="phone" class="form-control form-control-phone2" name="webform[email]" required/>
                                     </div>
                                 </div>
-                                <div class="form-group form-group--lg input-with-icon">
+                                <div class="form-group form-group--lg">
                                     <div class="col-xs-12">
-                                        <input type="email" class="form-control email" placeholder="E-mail" name="webform[email]" required/>
+                                        <select class="form-control" id="sel1">
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                        </select>
+
                                     </div>
                                 </div>
-                                <input type="hidden" name="webform[tracking]" value="<?=$tracking_id?>">
-                                <input type="hidden" name="webform[s_id]" value="<?=$site['id']?>">
-                                <input type="hidden" name="webform[v_inn]" value="<?=$v_inn?>">
-                                <input type="hidden" name="webform[redirect_url]" id="redirect_url" value="/members.php">
-                                <input type="hidden" name="webform[traff]" id="custom_traff" value="<?=isset_or($user['traff'], '')?>">
-                                <input type="hidden" name="webform[campid]" value="<?=isset_or($user['campid'], '285')?>">
                                 <div class="form-group">
                                     <div class="col-xs-12">
-                                        <button class="btn  btn-block btn-lg btn-primary form-btn" type="submit" >
+                                        <button class="btn  btn-block btn-lg btn-primary form-btn mt-19" type="submit" >
                                             Register here
                                         </button>
                                     </div>
@@ -100,11 +105,10 @@
                             </form>
                         </div>
                     
-                        <div class="form--dream__footer">
+                        <div class="main-form__footer">
                             <div class="top">
-                                <div class="check">
-                                    <img class="img-fluid" src="img/18.png" />
-                                    <input type="checkbox" name="checkme" id="agree"/>
+                                <div class="checkbox">
+                                    <label><img class="img-fluid" src="img/18.png" /><input type="checkbox" value="" /></label>
                                 </div>
                                 <div class="agree">
                                     <p> I agree ro receive information via email from opteck.com</p>
@@ -178,7 +182,7 @@
                                 </div> 
                                 <div class="row-bottom">
                                     <div class="col-md-4 mx-auto">
-                                        <button class="btn  btn-block btn-lg btn-primary form-btn scroll-to-form" type="button" >
+                                        <button class="btn  btn-block btn-lg tabs-btn scroll-to-form fw-thin text-white" type="button" >
                                             I want to try it
                                         </button>
                                     </div>
@@ -208,7 +212,7 @@
                                 </div> 
                                 <div class="row-bottom">
                                     <div class="col-md-4 mx-auto">
-                                        <button class="btn  btn-block btn-lg btn-primary form-btn scroll-to-form" type="button" >
+                                        <button class="btn  btn-block btn-lg tabs-btn scroll-to-form fw-thin text-white" type="button" >
                                             I want to try it
                                         </button>
                                     </div>
@@ -238,7 +242,7 @@
                                 </div> 
                                 <div class="row-bottom">
                                     <div class="col-md-4 mx-auto">
-                                        <button class="btn  btn-block btn-lg btn-primary form-btn scroll-to-form" type="button" >
+                                        <button class="btn  btn-block btn-lg tabs-btn scroll-to-form fw-thin text-white" type="button" >
                                             I want to try it
                                         </button>
                                     </div>

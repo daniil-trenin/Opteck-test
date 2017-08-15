@@ -1,4 +1,4 @@
-.form--dream {
+.main-form {
     background-color: rgba(31, 16, 45, .7);
     padding-top: 20px;
     padding-bottom: 14px;
@@ -19,7 +19,7 @@
         &::after {
             content: '';
             position: absolute;
-            left: 165px;
+            left: 180px;
             bottom: -16px;
             width: 19px;
             height: 16px;
@@ -33,22 +33,25 @@
     &__footer{
         .top {
             padding: 8px 67px 0 57px;
+            display: flex;
             img {
                 vertical-align: text-top;
             }
-            p {
-                font-size: 0.7em;
-                text-align: left;
-                line-height: normal;
-                margin-bottom: 0;
-            }
-            a {
-                font-size: .7em;
-
-            }
-            .check {
+            .checkbox {
                 width: 35%;
-                float: left;
+            }
+            .agree {
+                text-align: left;
+                width: 60%;
+                p {
+                    font-size: 0.7em;
+                    text-align: left;
+                    line-height: normal;
+                    margin-bottom: 0;
+                }
+                a {
+                    font-size: .7em;
+                }
             }
         }
         .bottom {
@@ -61,7 +64,48 @@
     margin-bottom: 9px;
     .form-control {
         border-radius: 1.15rem;
+        line-height: 1.55;
+    }
+    .phone-1 {
+        float: left;
+        width: 25%;
+        display: inline-block;
+        input {
+            border-radius: inherit;
+            border-top-left-radius: 1.15rem;
+            border-bottom-left-radius: 1.15rem 
+        }
+    }
+    .phone-2 {
+        width: 75%;
+        display: inline-block;
+        input {
+            border-radius: inherit;
+            border-top-right-radius: 1.15rem;
+            border-bottom-right-radius: 1.15rem;
+        }
     }
     
 }
 
+@media(max-width: 480px){
+    .main-form {
+        background-color: rgba(31,16,45,1);
+        &__body {
+            padding: 35px 38px 0 38px;
+        }
+        &__footer {
+            .top {
+               padding: 8px 40px; 
+               .checkbox {
+                    width: 22%;
+                    text-align: left;
+                }
+               .agree {
+                    text-align: left;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

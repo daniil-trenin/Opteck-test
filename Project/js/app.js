@@ -21,7 +21,7 @@
     
     $('.scroll-to-form').click(function(e) {
         e.preventDefault();
-        $.scrollTo('.form--dream',700);;
+        $.scrollTo('.main-form',700);;
     });
 
 
