@@ -40,11 +40,11 @@ section h3.section-subheading {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #84c3e9;
   text-shadow: none; }
 
 ::selection {
-  background: #fed136;
+  background: #84c3e9;
   text-shadow: none; }
 
 img::selection {
@@ -55,6 +55,9 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #fed136; }
+
+.text-black {
+  color: #000; }
 
 .fw-thin {
   font-weight: 100;
@@ -73,6 +76,9 @@ body {
 
 .l-h {
   line-height: 1.25; }
+
+.fz-22 {
+  font-size: 22px; }
 
 .mt-50 {
   margin-top: 50px; }
@@ -112,12 +118,15 @@ body {
     background-color: rgba(30, 15, 44, 0.7);
     border-radius: 10px; }
     .masthead .story p {
-      font-size: 1.025em;
+      font-size: 1.12em;
       text-align: left;
       font-weight: 300;
-      line-height: 1.4; }
+      line-height: 1.5; }
     .masthead .story strong {
       font-weight: 500; }
+    .masthead .story .name {
+      display: block;
+      padding-top: 10px; }
   .masthead .man {
     position: relative;
     top: 60px;
@@ -172,7 +181,7 @@ body {
     text-transform: none;
     margin-bottom: 27px; }
   .main-form__header {
-    padding: 20px 0;
+    padding: 16px 0;
     background-color: #3f808a;
     position: relative; }
     .main-form__header span {
@@ -181,7 +190,7 @@ body {
     .main-form__header::after {
       content: '';
       position: absolute;
-      left: 180px;
+      left: 183px;
       bottom: -16px;
       width: 19px;
       height: 16px;
@@ -193,25 +202,26 @@ body {
   .main-form__body {
     padding: 35px 50px 0 60px; }
   .main-form__footer .top {
-    padding: 8px 67px 0 57px;
+    padding: 8px 45px 0 57px;
     display: flex; }
     .main-form__footer .top img {
       vertical-align: text-top; }
     .main-form__footer .top .checkbox {
-      width: 35%; }
+      width: 28%; }
     .main-form__footer .top .agree {
       text-align: left;
-      width: 60%; }
+      width: 70%; }
       .main-form__footer .top .agree p {
-        font-size: 0.7em;
+        font-size: .9em;
         text-align: left;
         line-height: normal;
         margin-bottom: 0; }
       .main-form__footer .top .agree a {
-        font-size: .7em; }
+        font-size: .9em;
+        outline: none; }
   .main-form__footer .bottom {
     text-align: right;
-    padding: 35px 27px 15px 0; }
+    padding: 53px 27px 8px 0; }
 
 .form-group {
   margin-bottom: 9px; }
@@ -220,19 +230,24 @@ body {
     line-height: 1.55; }
   .form-group .phone-1 {
     float: left;
-    width: 25%;
+    width: 33%;
     display: inline-block; }
     .form-group .phone-1 input {
       border-radius: inherit;
       border-top-left-radius: 1.15rem;
       border-bottom-left-radius: 1.15rem; }
   .form-group .phone-2 {
-    width: 75%;
+    width: 66%;
     display: inline-block; }
     .form-group .phone-2 input {
       border-radius: inherit;
       border-top-right-radius: 1.15rem;
       border-bottom-right-radius: 1.15rem; }
+
+.custom-select {
+  background: #fff url("../img/arrow.png") no-repeat right 0.75rem center;
+  border-radius: 1.15rem;
+  line-height: 1.55; }
 
 @media (max-width: 480px) {
   .main-form {
@@ -248,7 +263,7 @@ body {
         text-align: left;
         width: 70%; } }
 
-#services {
+.faq {
   position: relative;
   padding-top: 73px;
   padding-bottom: 30px;
@@ -260,16 +275,12 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  #services .custom-container {
+  .faq .custom-container {
     padding: 45px 35px; }
-  #services .row-bottom {
+  .faq .row-bottom {
     background: #fafafa;
     border-top: 1px solid #ececec;
     padding: 23px 0 25px 0; }
-
-.service-heading {
-  margin: 15px 0;
-  text-transform: none; }
 
 .tab {
   margin: 0;
@@ -284,16 +295,17 @@ body {
       border-right: 1px solid #f0f0f0;
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;
-      padding: 24px 26px;
+      padding: 24px 21px;
       font-size: 16px;
       text-transform: none;
       text-align: left;
       color: #282828;
-      font-weight: 500; }
+      font-weight: 500;
+      letter-spacing: .9px; }
     .tab .tab-legend .active {
       border-left: 13px solid #7fc5d0 !important;
       background-color: #FFF;
-      padding: 23px 29px 25px 9px;
+      padding: 23px 22px 25px 9px;
       color: #3f808a; }
       @media (max-width: 764px) {
         .tab .tab-legend .active {

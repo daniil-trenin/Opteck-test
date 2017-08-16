@@ -47,12 +47,12 @@ section {
 
 // Highlight color customization
 ::-moz-selection {
-    background: $theme-primary;
+    background: $theme-info;
     text-shadow: none;
 }
 
 ::selection {
-    background: $theme-primary;
+    background: $theme-info;
     text-shadow: none;
 }
 
@@ -66,6 +66,10 @@ img::-moz-selection {
 
 body {
     -webkit-tap-highlight-color: $theme-primary;
+}
+
+.text-black {
+    color: #000;
 }
 
 .fw-thin {
@@ -89,6 +93,10 @@ body {
 
 .l-h {
     line-height: 1.25;
+}
+
+.fz-22 {
+    font-size: 22px;
 }
 
 .mt-50 {

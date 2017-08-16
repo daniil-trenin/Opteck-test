@@ -9,7 +9,7 @@
         margin-bottom: 27px;
     }
     &__header {
-        padding: 20px 0;
+        padding: 16px 0;
         background-color: #3f808a;
         position: relative;
         span {
@@ -19,7 +19,7 @@
         &::after {
             content: '';
             position: absolute;
-            left: 180px;
+            left: 183px;
             bottom: -16px;
             width: 19px;
             height: 16px;
@@ -32,31 +32,32 @@
     }
     &__footer{
         .top {
-            padding: 8px 67px 0 57px;
+            padding: 8px 45px 0 57px;
             display: flex;
             img {
                 vertical-align: text-top;
             }
             .checkbox {
-                width: 35%;
+                width: 28%;
             }
             .agree {
                 text-align: left;
-                width: 60%;
+                width: 70%;
                 p {
-                    font-size: 0.7em;
+                    font-size: .9em;
                     text-align: left;
                     line-height: normal;
                     margin-bottom: 0;
                 }
                 a {
-                    font-size: .7em;
+                    font-size: .9em;
+                    outline: none;
                 }
             }
         }
         .bottom {
             text-align: right;
-            padding: 35px 27px 15px 0;
+            padding: 53px 27px 8px 0;
         }
     }
 }
@@ -68,7 +69,7 @@
     }
     .phone-1 {
         float: left;
-        width: 25%;
+        width: 33%;
         display: inline-block;
         input {
             border-radius: inherit;
@@ -77,7 +78,7 @@
         }
     }
     .phone-2 {
-        width: 75%;
+        width: 66%;
         display: inline-block;
         input {
             border-radius: inherit;
@@ -86,6 +87,11 @@
         }
     }
     
+}
+.custom-select {
+    background: #fff url('../img/arrow.png') no-repeat right 0.75rem center;
+    border-radius: 1.15rem;
+    line-height: 1.55;
 }
 
 @media(max-width: 480px){

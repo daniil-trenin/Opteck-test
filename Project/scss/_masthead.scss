@@ -45,13 +45,17 @@
         background-color: rgba(30, 15, 44, .7);
         border-radius: 10px;
         p {
-            font-size: 1.025em;
+            font-size: 1.12em;
             text-align: left;
             font-weight: 300;
-            line-height: 1.4;
+            line-height: 1.5;
         }
         strong {
             font-weight: 500;
+        }
+        .name {
+            display: block;
+            padding-top: 10px;
         }
     }
 

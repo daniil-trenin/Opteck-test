@@ -23,7 +23,7 @@
         e.preventDefault();
         $.scrollTo('.main-form',700);;
     });
-
+    
 
 })(jQuery); // End of use strict
 
