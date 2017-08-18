@@ -21,30 +21,12 @@
     .logo {
         float: left;
     }
-    // .intro-text {
-    //     padding-top: 42px;
-    //     padding-bottom: 50px;
-    //     .intro-lead-in {
-    //         font-size: 22px;
-    //         font-style: italic;
-    //         line-height: 22px;
-    //         margin-bottom: 25px;
-    //         @include serif-font;
-    //     }
-    //     .intro-heading {
-    //         font-size: 50px;
-    //         font-weight: 700;
-    //         line-height: 50px;
-    //         margin-bottom: 25px;
-    //         @include heading-font;
-    //     }
-    // }
 
     .story {
         padding: 22px 30px 45px 29px;
         background-color: rgba(30, 15, 44, .7);
         border-radius: 10px;
-        p {
+        &__message {
             font-size: 1.12em;
             text-align: left;
             font-weight: 300;
@@ -67,12 +49,46 @@
     }
 }
 
-@media(max-width: 480px){
+
+@media(min-width:768px) and (max-width: 991px) {
+    .masthead {
+        background-position: top;
+        background-size: auto 758px;
+        .man {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: auto;
+            width: 80%;
+            margin-top: -60px;
+        }
+    }
+}
+
+@media(min-width:481px) and (max-width: 767px){
+    .masthead {
+        .man {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: auto;
+            width: 80%;
+            margin-top: -60px;
+        }
+    }
+}
+
+@media(min-width: 381px) and (max-width: 480px){
     .masthead {
         background-position: top;
         background-size: auto 704px; 
         h1 {
-            font-size: 40px;
+            font-size: 33px;
+        }
+        .story {
+            &__message {
+                font-size: 1.02em;
+            }
         }
         .man {
             position: relative;
@@ -84,36 +100,25 @@
     }
 }
 
-@media(min-width:481px) and (max-width: 991px){
+@media(min-width: 320px) and (max-width: 380px) {
     .masthead {
+        background-position: top;
+        background-size: auto 604px; 
+        h1 {
+            font-size: 28px;
+        }
+        .story {
+            padding: 22px 22px 45px 21px;
+            &__message {
+                font-size: .86em;
+            }
+        }
         .man {
             position: relative;
             top: 0;
             left: 0;
-            margin: auto;
-            width: 80%;
-            margin-top: 40px;
-        }
-    }
-}
-
-@media(min-width:768px) {
-    .masthead {
-        .intro-text {
-            .intro-lead-in {
-                font-size: 40px;
-                font-style: italic;
-                line-height: 40px;
-                margin-bottom: 25px;
-                @include serif-font;
-            }
-            .intro-heading {
-                font-size: 75px;
-                font-weight: 700;
-                line-height: 75px;
-                margin-bottom: 50px;
-                @include heading-font;
-            }
+            width: 100%;
+            margin-top: -103px;
         }
     }
 }
