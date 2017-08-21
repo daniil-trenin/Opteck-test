@@ -118,7 +118,7 @@
         background-color: #1f102d;
         &__header {
             &:after {
-                left: 162px;
+                left: 48%;
             }
         }
         &__body {
@@ -146,7 +146,27 @@
     }
 }
 
-@media(min-width: 320px) and (max-width: 380px) {
+@media (min-width: 360px) and (max-width: 380px) {
+    .main-form {
+        background-color: #1f102d;
+        &__header {
+            &:after {
+                left: 157px;
+                bottom: -15px;
+            }
+        }
+        &__body {
+            padding: 35px 27px 0;
+        }
+        &__footer {
+            .top {
+                padding: 8px 25px 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 359px) {
     .main-form {
         background-color: #1f102d;
         &__header {

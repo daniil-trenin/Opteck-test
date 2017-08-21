@@ -19,9 +19,7 @@
         background: linear-gradient(to top, #63241d, #703630, #84514c);
         border-top: 1px solid #b97f78;
     }
-}
-.form-btn {
-    
+   
 }
 
 .tabs-btn {
@@ -44,6 +42,7 @@
         border-top: 1px solid #625171;
         border-left: 1px solid #523f63;
     }
+    @media (min-width: 768px) and (max-width: 991px) {font-size: 18px;}
 }
 
 .btn-xl {
